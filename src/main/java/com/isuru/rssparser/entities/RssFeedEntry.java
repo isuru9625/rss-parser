@@ -1,18 +1,16 @@
 package com.isuru.rssparser.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.tomcat.jni.Poll;
-
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
 @Data
 public class RssFeedEntry {
 
-    public RssFeedEntry(String title, String desc, String publicationDate, String author, PollingEvent event){
+    public RssFeedEntry(String title, String desc, Date publicationDate, String author, PollingEvent event){
         this.title=title;
         this.description=desc;
         this.author=author;
@@ -27,7 +25,8 @@ public class RssFeedEntry {
     @Lob
     private String description;
     private String author;
-    private String publicationDate;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date publicationDate;
 
     @ManyToOne
     @JoinColumn(name = "pollingEventId")

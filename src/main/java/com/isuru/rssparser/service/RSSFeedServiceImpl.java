@@ -14,7 +14,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -82,7 +81,7 @@ public class RSSFeedServiceImpl implements IRSSFeedService{
         return new RssFeedEntry(
                 entry.getTitle(),
                 entry.getDescription().getValue(),
-                entry.getPublishedDate().toString(),
+                entry.getPublishedDate(),
                 entry.getAuthor(),
                 event
         );

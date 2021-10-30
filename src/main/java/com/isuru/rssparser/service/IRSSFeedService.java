@@ -5,8 +5,6 @@ import com.isuru.rssparser.entities.RssFeedEntry;
 import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
 
-import java.util.List;
-
 public interface IRSSFeedService {
     SyndFeed getRssFeed();
     void getFeedEntries();
