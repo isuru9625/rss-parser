@@ -44,6 +44,7 @@ public class RSSFeedServiceImpl implements IRSSFeedService{
          getRssFeed().getEntries()
                 .stream()
                 .forEach(e->{
+
                     feedEntries.add(
                             new RssFeedEntry(
                                     e.getTitle(),
