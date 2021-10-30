@@ -1,19 +1,33 @@
 package com.isuru.rssparser.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
 @Table(name="Polling_Event")
+@NoArgsConstructor
+@ToString
 public class PollingEvent {
     @Id
     @GeneratedValue
     private long id;
     private long updatedRowCount;
-    private long updatedTime;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date updatedTime;
+
+    @OneToMany(mappedBy = "pollingEventId")
+    @Transient
+    List<RssFeedEntry> feeds;
+
+    public PollingEvent(long updatedRowCount, Date updatedTime) {
+        this.updatedRowCount=updatedRowCount;
+        this.updatedTime=updatedTime;
+    }
 }
