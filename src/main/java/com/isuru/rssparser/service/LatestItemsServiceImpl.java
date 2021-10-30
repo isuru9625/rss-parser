@@ -13,7 +13,8 @@ public class LatestItemsServiceImpl implements ILatestItemsService{
     IRssFeedRepository rssFeedRepository;
 
     @Override
-    public List<RssFeedEntry> fetchLatestItems() {
+    public List<RssFeedEntry> fetchLatestItems()
+    {
         return rssFeedRepository.findTop10ByOrderByPublicationDateDesc();
     }
 }
