@@ -1,6 +1,8 @@
 package com.isuru.rssparser.controller;
 
+import com.isuru.rssparser.entities.PollingEvent;
 import com.isuru.rssparser.models.RssFeedEntry;
+import com.isuru.rssparser.repository.IPollingEventRepository;
 import com.isuru.rssparser.service.RSSFeedServiceImpl;
 import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
@@ -24,8 +26,13 @@ public class RSSFeedController {
     @Autowired
     RSSFeedServiceImpl rssFeedService;
 
+    @Autowired
+    IPollingEventRepository repository;
+
     @GetMapping(value = "/test",produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<RssFeedEntry> test(){
+        repository.save(new PollingEvent());
+
         return rssFeedService.getFeedEntries();
     }
 }
