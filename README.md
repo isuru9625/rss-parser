@@ -1,6 +1,6 @@
 **Run The Application**
 
-  clone the repository, https://github.com/isuru9625/rss-parser.git and run ResParserApplication.java. The default port is 8080.
+  Clone the repository, https://github.com/isuru9625/rss-parser.git and run ResParserApplication.java. The default port is 8080.
   And the documentation of this application is shown in below. 
 
 
