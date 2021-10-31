@@ -22,7 +22,7 @@ public class PaginatedServiceImpl implements IPaginatedService{
      * @param page page number
      * @param size number of entries
      * @param direction whether it is in ascending order or descending order
-     * @param sort the method of sorting
+     * @param sort the parameter of sorting
      * @return
      */
     @Override
