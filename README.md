@@ -7,8 +7,6 @@
   <_The URL Structure (path only, no root url)_>
 
 * **Method:**
-  
-  <_The request type_>
 
   `GET` 
   
