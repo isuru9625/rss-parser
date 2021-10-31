@@ -62,6 +62,15 @@
   http://localhost:8080/v1/rssFeed/items?page=0&size=2&sort=publicationDate&direction=dsc
   
 
-* **Notes:**
-
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._> 
+* **Suggestions:**
+  
+  Better to remove html tages from the response description
+  
+  More parameter can be introduced in the end points to get more specific records
+  
+  Further exceptions handling can be done
+  
+  Can use different log levels
+  
+  
+  
