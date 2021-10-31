@@ -22,9 +22,9 @@
 
    **Optional:**
  
-   `page=[alphanumeric]`
+   `page=[alphanumeric]` - page number which can be used to get the entries in that page when considering pagination.
    
-   `size=[alphanumeric]`
+   `size=[alphanumeric]` 
    
    `direction=[char]`
    
