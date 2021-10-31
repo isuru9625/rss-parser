@@ -2,17 +2,27 @@
 ----
   <_Additional information about your API call. Try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple)._>
 
-* **http://localhost:8080/v1/rssFeed/items**
+* **URL**
 
-  http:// <<host>>:<<port?>/items
+  http://localhost:8080/v1/rssFeed/items
 
 * **Method:**
+  
+  <_The request type_>
 
-  `GET` 
+  `GET` | `POST` | `DELETE` | `PUT`
   
 *  **URL Params**
 
-no parameters required
+   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
+
+   **Required:**
+ 
+   `id=[integer]`
+
+   **Optional:**
+ 
+   `photo_id=[alphanumeric]`
 
 * **Data Params**
 
