@@ -5,13 +5,12 @@
 * **URL**
 
   http://{host}:{port}/v1/rssFeed/items
+  
   eg: - http://localhost:8080/v1/rssFeed/items
 
 * **Method:**
-  
-  <_The request type_>
 
-  `GET` | `POST` | `DELETE` | `PUT`
+  `GET`
   
 *  **URL Params**
 
