@@ -22,12 +22,24 @@ public class RSSFeedController {
     @Autowired
     IPaginatedService paginatedService;
 
+    /**
+     * Get end point to get the latest ten rss feed entries of the given rss feed
+     * @return
+     */
     @GetMapping(value = "/items",produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<RssFeedEntry> fetchLatestItems()
     {
         return latestItemsService.fetchLatestItems();
     }
 
+    /**
+     * Get end point to get the rss feed entries of the given rss feed according to pagination criteria
+     * @param page page number
+     * @param size number of records in one page
+     * @param direction whether it is in ascending order or descending order
+     * @param sort the method of sorting
+     * @return
+     */
     @GetMapping(value = "/items",produces = {MediaType.APPLICATION_JSON_VALUE}, params = {"page", "size", "sort" })
     public List<RssFeedEntry> fetchPaginatedItems(@RequestParam("page") int page,
                                                   @RequestParam("size") int size,

@@ -7,6 +7,6 @@ import com.rometools.rome.feed.synd.SyndFeed;
 
 public interface IRSSFeedService {
     SyndFeed getRssFeed();
-    void getFeedEntries();
+    Iterable<RssFeedEntry> getFeedEntries();
     RssFeedEntry transform(SyndEntry entries,PollingEvent event);
 }

@@ -50,11 +50,11 @@ public class RSSFeedServiceImpl implements IRSSFeedService{
     }
 
     @Override
-    public void getFeedEntries() {
+    public Iterable<RssFeedEntry> getFeedEntries() {
          List<RssFeedEntry> feedEntries=new ArrayList<>();
          Optional<PollingEvent> lastEvent=eventRepository.findTop1ByOrderByUpdatedTimeDesc();
 
-        PollingEvent event=eventRepository.save(new PollingEvent(0,new Date()));
+         PollingEvent event=eventRepository.save(new PollingEvent(0,new Date()));
 
          if(lastEvent.isPresent()){
              log.info("Last event occurred at: {}",lastEvent.get().getUpdatedTime());
@@ -73,7 +73,7 @@ public class RSSFeedServiceImpl implements IRSSFeedService{
 
          event.setUpdatedRowCount(feedEntries.size());
          eventRepository.save(event);
-         feedRepository.saveAll(feedEntries);
+         return feedRepository.saveAll(feedEntries);
     }
 
     @Override
