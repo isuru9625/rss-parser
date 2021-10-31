@@ -15,15 +15,15 @@
   
 *  **URL Params**
 
-  There are 4 url params related to this end point which can be used to filter out the rss feed entries. But all those parameters are optional.
+    There are 4 url params related to this end point which can be used to filter out the rss feed entries. But all those parameters are optional.
   
    **Required:**
  
-   No required params
+    No required params
 
    **Optional:**
  
-   `page=[alphanumeric]` (default = 0) - page number which can be used to get the entries in that page when considering pagination.
+   ` page=[alphanumeric]` (default = 0) - page number which can be used to get the entries in that page when considering pagination.
    
    `size=[alphanumeric]` (default = 10) - number of entires which should be loaded into the get request
    
