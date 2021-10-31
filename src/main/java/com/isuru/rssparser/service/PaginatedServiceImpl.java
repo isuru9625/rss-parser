@@ -39,7 +39,7 @@ public class PaginatedServiceImpl implements IPaginatedService{
         }
         else
         {
-            pageableRequest= PageRequest.of(page, size, Sort.by(sort).ascending());
+            pageableRequest= PageRequest.of(page, size, Sort.by(sort).descending());
         }
         rssFeedEntries = rssFeedRepository.findAll(pageableRequest).getContent();
         return rssFeedEntries;
