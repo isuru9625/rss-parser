@@ -26,11 +26,11 @@ public class RSSFeedController {
      * Get end point to get the latest ten rss feed entries of the given rss feed
      * @return
      */
-    @GetMapping(value = "/items",produces = {MediaType.APPLICATION_JSON_VALUE})
-    public List<RssFeedEntry> fetchLatestItems()
-    {
-        return latestItemsService.fetchLatestItems();
-    }
+//    @GetMapping(value = "/items",produces = {MediaType.APPLICATION_JSON_VALUE})
+//    public List<RssFeedEntry> fetchLatestItems()
+//    {
+//        return latestItemsService.fetchLatestItems();
+//    }
 
     /**
      * Get end point to get the rss feed entries of the given rss feed according to pagination criteria
@@ -40,10 +40,10 @@ public class RSSFeedController {
      * @param sort the parameter of sorting
      * @return
      */
-    @GetMapping(value = "/items",produces = {MediaType.APPLICATION_JSON_VALUE}, params = {"page", "size", "sort" })
-    public List<RssFeedEntry> fetchPaginatedItems(@RequestParam(required = false) int page,
-                                                  @RequestParam(required = false) int size,
-                                                  @RequestParam(required = false) String direction,
+    @GetMapping(value = "/items",produces = {MediaType.APPLICATION_JSON_VALUE})
+    public List<RssFeedEntry> fetchPaginatedItems(@RequestParam(required = false, defaultValue = "0") int page,
+                                                  @RequestParam(required = false, defaultValue = "10") int size,
+                                                  @RequestParam(required = false, defaultValue = "dsc") String direction,
                                                   @RequestParam(required = false, defaultValue = "publicationDate") String sort)
     {
 
