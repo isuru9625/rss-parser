@@ -38,12 +38,16 @@ public class RSSFeedServiceImpl implements IRSSFeedService{
     @Override
     public SyndFeed getRssFeed() {
         SyndFeed feed=null;
+
         log.info("Extracting RSS feed from {}", rssUrl);
-        try{
+        try
+        {
             XmlReader reader=new XmlReader(new URL(rssUrl));
             feed=new SyndFeedInput().build(reader);
-        }catch (IOException | FeedException e){
-
+        }
+        catch (IOException | FeedException e)
+        {
+            log.error(String.valueOf(e), e.toString());
         }
 
         return feed;

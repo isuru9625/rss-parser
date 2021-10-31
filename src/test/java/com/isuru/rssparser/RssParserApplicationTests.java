@@ -15,8 +15,8 @@ public class RssParserApplicationTests {
 	IRSSFeedService rssFeedService;
 
 	@Test
-	void contextLoads() {
+	void contextLoads()
+	{
 
 	}
-
 }

@@ -4,7 +4,6 @@ import com.isuru.rssparser.entities.RssFeedEntry;
 import com.isuru.rssparser.repository.IRssFeedRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service

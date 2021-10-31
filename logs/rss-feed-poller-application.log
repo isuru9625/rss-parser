@@ -4796,3 +4796,96 @@ java.lang.IllegalStateException: Optional int parameter 'size' is present but ca
 2021-10-31 22:56:54,780 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Extracting RSS feed from https://feeds.simplecast.com/54nAGcIl
 2021-10-31 23:01:54,522 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Last event occurred at: 2021-10-31 22:56:54.777
 2021-10-31 23:01:54,525 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Extracting RSS feed from https://feeds.simplecast.com/54nAGcIl
+2021-10-31 23:10:13,907 INFO org.springframework.boot.StartupInfoLogger [main] Starting RssParserApplication using Java 16.0.2 on LAPTOP-N78MNON3 with PID 7060 (C:\Users\ACER\Desktop\Java_Exam\rss-parser\rss-parser\target\classes started by ACER in C:\Users\ACER\Desktop\Java_Exam\rss-parser\rss-parser)
+2021-10-31 23:10:13,919 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-31 23:10:17,862 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-31 23:10:23,355 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 5455 ms. Found 2 JPA repository interfaces.
+2021-10-31 23:10:26,783 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-10-31 23:10:26,950 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-31 23:10:26,954 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-10-31 23:10:26,957 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-10-31 23:10:27,575 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-10-31 23:10:27,576 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 13389 ms
+2021-10-31 23:10:27,680 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-31 23:10:28,197 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-31 23:10:28,207 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rss_feed_db'
+2021-10-31 23:10:29,368 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-31 23:10:29,960 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-31 23:10:43,346 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-31 23:10:44,385 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-31 23:10:47,494 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-31 23:10:47,516 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-31 23:10:52,900 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-31 23:10:53,055 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-31 23:10:53,118 INFO org.springframework.boot.StartupInfoLogger [main] Started RssParserApplication in 41.697 seconds (JVM running for 43.436)
+2021-10-31 23:10:53,792 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Initial polling...
+2021-10-31 23:10:53,793 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Extracting RSS feed from https://feeds.simplecast.com/54nAGcIl
+2021-10-31 23:12:19,016 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-31 23:12:19,019 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-10-31 23:12:19,023 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-10-31 23:15:53,099 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Last event occurred at: 2021-10-31 23:10:53.657
+2021-10-31 23:15:53,102 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Extracting RSS feed from https://feeds.simplecast.com/54nAGcIl
+2021-10-31 23:17:46,644 INFO org.springframework.boot.StartupInfoLogger [main] Starting RssParserApplication using Java 16.0.2 on LAPTOP-N78MNON3 with PID 1776 (C:\Users\ACER\Desktop\Java_Exam\rss-parser\rss-parser\target\classes started by ACER in C:\Users\ACER\Desktop\Java_Exam\rss-parser\rss-parser)
+2021-10-31 23:17:46,656 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-31 23:17:50,514 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-31 23:17:50,710 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 165 ms. Found 2 JPA repository interfaces.
+2021-10-31 23:17:52,392 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-10-31 23:17:52,422 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-31 23:17:52,424 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-10-31 23:17:52,425 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-10-31 23:17:52,824 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-10-31 23:17:52,825 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6034 ms
+2021-10-31 23:17:52,946 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-31 23:17:53,694 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-31 23:17:53,707 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rss_feed_db'
+2021-10-31 23:17:54,256 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-31 23:17:54,469 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-31 23:17:55,161 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-31 23:17:55,644 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-31 23:17:57,472 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-31 23:17:57,507 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-31 23:18:01,056 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-31 23:18:01,185 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-31 23:18:01,219 INFO org.springframework.boot.StartupInfoLogger [main] Started RssParserApplication in 16.518 seconds (JVM running for 19.006)
+2021-10-31 23:18:01,828 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Initial polling...
+2021-10-31 23:18:01,828 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Extracting RSS feed from https://feeds.simplecast.com/54nAGcIl
+2021-10-31 23:20:50,510 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-31 23:20:50,512 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-10-31 23:20:50,516 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-10-31 23:33:28,356 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m4s551ms310µs400ns).
+2021-10-31 23:33:28,533 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Last event occurred at: 2021-10-31 23:18:01.663
+2021-10-31 23:33:28,534 INFO com.isuru.rssparser.service.RSSFeedServiceImpl [scheduling-1] Extracting RSS feed from https://feeds.simplecast.com/54nAGcIl
+2021-10-31 23:33:32,750 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-31 23:33:32,752 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-31 23:33:32,849 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy91.save(Unknown Source)
+	at com.isuru.rssparser.service.RSSFeedServiceImpl.getFeedEntries(RSSFeedServiceImpl.java:79)
+	at com.isuru.rssparser.service.PollerSchedulerService.pollRssFeed(PollerSchedulerService.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-10-31 23:33:32,942 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-31 23:33:33,080 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

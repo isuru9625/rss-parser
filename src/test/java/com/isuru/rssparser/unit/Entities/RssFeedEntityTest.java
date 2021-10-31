@@ -3,8 +3,6 @@ package com.isuru.rssparser.unit.Entities;
 import com.isuru.rssparser.entities.PollingEvent;
 import com.isuru.rssparser.entities.RssFeedEntry;
 import com.isuru.rssparser.repository.IRssFeedRepository;
-import com.isuru.rssparser.service.IPaginatedService;
-import com.isuru.rssparser.service.PaginatedServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

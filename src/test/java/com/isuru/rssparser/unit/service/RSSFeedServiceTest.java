@@ -7,18 +7,10 @@ import com.rometools.rome.feed.synd.*;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import javax.persistence.EntityManagerFactory;
-import java.math.BigDecimal;
 import java.util.Date;
-
-import static org.mockito.ArgumentMatchers.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -26,7 +18,6 @@ public class RSSFeedServiceTest {
 
     @Autowired
     private RSSFeedServiceImpl rssFeedService;
-
 
     @Test
     public void testTransformMethod(){

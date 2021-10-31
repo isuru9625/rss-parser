@@ -3,12 +3,13 @@ package com.isuru.rssparser.service;
 import com.isuru.rssparser.constants.Constant;
 import com.isuru.rssparser.entities.RssFeedEntry;
 import com.isuru.rssparser.repository.IRssFeedRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,18 +29,22 @@ public class PaginatedServiceImpl implements IPaginatedService{
     @Override
     public List<RssFeedEntry> fetchPaginatedItems(int page, int size, String direction, String sort)
     {
+        final Logger log = LoggerFactory.getLogger(PaginatedServiceImpl.class);
         List<RssFeedEntry> rssFeedEntries = new ArrayList<>();
         Pageable pageableRequest ;
         if(Constant.ASC.equalsIgnoreCase(direction))
         {
             pageableRequest= PageRequest.of(page, size, Sort.by(sort).ascending());
-        }else if(Constant.DSC.equalsIgnoreCase(direction))
+        }
+        else if(Constant.DSC.equalsIgnoreCase(direction))
         {
             pageableRequest= PageRequest.of(page, size, Sort.by(sort).descending());
         }
         else
         {
             pageableRequest= PageRequest.of(page, size, Sort.by(sort).descending());
+            log.info("Default sorting method is active - descending");
+
         }
         rssFeedEntries = rssFeedRepository.findAll(pageableRequest).getContent();
         return rssFeedEntries;
