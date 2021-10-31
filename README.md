@@ -18,11 +18,18 @@
 
    **Required:**
  
-   `id=[integer]`
+   No required params
 
    **Optional:**
  
-   `photo_id=[alphanumeric]`
+   `page=[alphanumeric]`
+   
+   `size=[alphanumeric]`
+   
+   `direction=[char]`
+   
+   `sort=[char]`
+
 
 * **Data Params**
 
