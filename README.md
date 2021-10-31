@@ -5,12 +5,8 @@
 * **URL**
 
   http://{host}:{port}/v1/rssFeed/items
-  
-  eg: - http://localhost:8080/v1/rssFeed/items
-  
+    
   http://{host}:{port}/v1/rssFeed/items=?page=?&size=?&sort=?&direction=?
-  
-  eg: - http://localhost:8080/v1/rssFeed/items?page=0&size=2&sort=publicationDate&direction=dsc
   
 
 * **Method:**
@@ -61,7 +57,10 @@
 
 * **Sample Call:**
 
-  <_Just a sample call to your endpoint in a runnable format ($.ajax call or a curl request) - this makes life easier and more predictable._> 
+  http://localhost:8080/v1/rssFeed/items
+  
+  http://localhost:8080/v1/rssFeed/items?page=0&size=2&sort=publicationDate&direction=dsc
+  
 
 * **Notes:**
 
