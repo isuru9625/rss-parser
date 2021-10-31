@@ -14,8 +14,8 @@
   
 *  **URL Params**
 
-   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
-
+  There are 4 url params related to this end point which can be used to filter out the rss feed entries. But all those parameters are optional.
+  
    **Required:**
  
    No required params
