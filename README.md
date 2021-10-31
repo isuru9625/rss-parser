@@ -33,7 +33,7 @@
    
    `direction=[char]`(default = 'dsc') - whether it is in ascending order or descending order
    
-   `sort=[char]`
+   `sort=[char]`(default = 'publicationDate') - the parameter of sorting
 
 
 * **Data Params**
