@@ -19,17 +19,17 @@
   
    **Required:**
  
-    No required params
+      No required params
 
    **Optional:**
  
-   ` page=[alphanumeric]` (default = 0) - page number which can be used to get the entries in that page when considering pagination.
+    `page=[alphanumeric]` (default = 0) - page number which can be used to get the entries in that page when considering pagination.
    
-   `size=[alphanumeric]` (default = 10) - number of entires which should be loaded into the get request
+    `size=[alphanumeric]` (default = 10) - number of entires which should be loaded into the get request
    
-   `direction=[char]`(default = 'dsc') - whether it is in ascending order or descending order
+    `direction=[char]`(default = 'dsc') - whether it is in ascending order or descending order
    
-   `sort=[char]`(default = 'publicationDate') - the parameter of sorting
+    `sort=[char]`(default = 'publicationDate') - the parameter of sorting
 
 
 * **Data Params**
