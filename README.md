@@ -4,7 +4,7 @@
 
 * **http://localhost:8080/v1/rssFeed/items**
 
-  http://<<host>>:<<port?>/items
+  http:// <<host>>:<<port?>/items
 
 * **Method:**
 
