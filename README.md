@@ -10,7 +10,7 @@
   
   <_The request type_>
 
-  `GET` | `POST` | `DELETE` | `PUT`
+  `GET` 
   
 *  **URL Params**
 
