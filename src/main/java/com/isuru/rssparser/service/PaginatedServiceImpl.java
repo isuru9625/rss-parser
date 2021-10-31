@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -19,6 +20,7 @@ public class PaginatedServiceImpl implements IPaginatedService{
     @Override
     public List<RssFeedEntry> fetchPaginatedItems(int page, int size, String direction, String sort)
     {
+        List<RssFeedEntry> rssFeedEntries = new ArrayList<>();
         Pageable pageableRequest ;
         if(Constant.ASC.equalsIgnoreCase(direction))
         {
@@ -31,6 +33,7 @@ public class PaginatedServiceImpl implements IPaginatedService{
         {
             pageableRequest= PageRequest.of(page, size, Sort.by(sort).ascending());
         }
-        return rssFeedRepository.findAll(pageableRequest).getContent();
+        rssFeedEntries = rssFeedRepository.findAll(pageableRequest).getContent();
+        return rssFeedEntries;
     }
 }

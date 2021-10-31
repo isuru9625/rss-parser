@@ -1,0 +1,12 @@
+2021-10-30 11:52:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM INFORMATION_SCHEMA.TABLES INFORMATION_SCHEMA.[*]TABLES"; SQL statement:
+SELECT * FROM INFORMATION_SCHEMA.TABLES INFORMATION_SCHEMA.TABLES [42000-193]
+2021-10-30 11:53:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "POLLING_EVENT" not found; SQL statement:
+SELECT * FROM Polling_Event [42102-193]
+2021-10-30 11:53:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "POLLING_EVENT" not found; SQL statement:
+SELECT * FROM Polling_Event [42102-193]
+2021-10-30 12:00:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "POLLING_EVENT" not found; SQL statement:
+SELECT * From Polling_Event [42102-193]
