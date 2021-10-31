@@ -4,7 +4,7 @@
 
 * **http://localhost:8080/v1/rssFeed/items**
 
-  <_The URL Structure (path only, no root url)_>
+  http://<host>:<port>/items
 
 * **Method:**
 
