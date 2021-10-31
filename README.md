@@ -4,7 +4,8 @@
 
 * **URL**
 
-  http://localhost:8080/v1/rssFeed/items
+  http://{host}:{port}/v1/rssFeed/items
+  eg: - http://localhost:8080/v1/rssFeed/items
 
 * **Method:**
   
