@@ -28,7 +28,7 @@ public class RssFeedEntry {
     @Temporal(TemporalType.TIMESTAMP)
     private Date publicationDate;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "pollingEventId")
     PollingEvent pollingEvent;
 }
