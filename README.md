@@ -62,13 +62,15 @@
 
 * **Suggestions:**
   
-  Better to remove html tages from the response description
+  Better to remove html tags from the response description
   
   More parameter can be introduced in the end points to get more specific records
   
   Further exceptions handling can be done
   
   Can use different log levels
+  
+  Can improve unit tests in different other paths
   
   
   
