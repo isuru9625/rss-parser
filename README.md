@@ -41,24 +41,7 @@
   * **Code:** 200 <br />
     **Content:** 
     
-    	id:2, **
-      title:"The Sunday Read: “Fear on Cape Cod as Sharks Hunt Again”",
-      
-      "description":"...",
-      
-      "author":"thedaily@nytimes.com (The New York Times)",
-      
-      "publicationDate":"2021-10-31T10:00:00.000+00:00",
-      
-      "pollingEvent":
-      
-            "id":1,
-            
-            "updatedRowCount":1363,
-            
-            "updatedTime":"2021-10-31T17:16:54.790+00:00",
-            
-            "feeds":null
+    	"id":2, "title":"The Sunday Read: “Fear on Cape Cod as Sharks Hunt Again”","description":"...", "author":"thedaily@nytimes.com (The New York      Times)","publicationDate":"2021-10-31T10:00:00.000+00:00","pollingEvent":"id":1,"updatedRowCount":1363,"updatedTime":"2021-10-31T17:16:54.790+00:00","feeds":null
  
 * **Error Response:**
 
