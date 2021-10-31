@@ -7,6 +7,11 @@
   http://{host}:{port}/v1/rssFeed/items
   
   eg: - http://localhost:8080/v1/rssFeed/items
+  
+  http://{host}:{port}/v1/rssFeed/items=?page=?&size=?&sort=?&direction=?
+  
+  eg: - http://localhost:8080/v1/rssFeed/items?page=0&size=2&sort=publicationDate&direction=dsc
+  
 
 * **Method:**
 
