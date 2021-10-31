@@ -21,7 +21,10 @@ public class PollerSchedulerService {
     @Autowired
     IPollingEventRepository eventRepository;
 
-    @Scheduled(fixedRate = 60000)
+    /**
+     * Get rss feed entries in every 5 minutes if there are any updates
+     */
+    @Scheduled(fixedRate = 300000)
     public void pollRssFeed() {
         rssFeedService.getFeedEntries();
 

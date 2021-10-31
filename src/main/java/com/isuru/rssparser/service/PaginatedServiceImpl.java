@@ -17,6 +17,14 @@ public class PaginatedServiceImpl implements IPaginatedService{
     @Autowired
     IRssFeedRepository rssFeedRepository;
 
+    /**
+     * Get the filtered out rss feed entries
+     * @param page page number
+     * @param size number of entries
+     * @param direction whether it is in ascending order or descending order
+     * @param sort the method of sorting
+     * @return
+     */
     @Override
     public List<RssFeedEntry> fetchPaginatedItems(int page, int size, String direction, String sort)
     {

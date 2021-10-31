@@ -49,6 +49,10 @@ public class RSSFeedServiceImpl implements IRSSFeedService{
         return feed;
     }
 
+    /**
+     * Get the rss feed and update the database accordingly
+     * @return
+     */
     @Override
     public Iterable<RssFeedEntry> getFeedEntries() {
          List<RssFeedEntry> feedEntries=new ArrayList<>();

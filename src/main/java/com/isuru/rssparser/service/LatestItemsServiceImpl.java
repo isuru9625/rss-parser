@@ -12,6 +12,10 @@ public class LatestItemsServiceImpl implements ILatestItemsService{
     @Autowired
     IRssFeedRepository rssFeedRepository;
 
+    /**
+     * Get the most recent 10 updates of the given rss feed
+     * @return
+     */
     @Override
     public List<RssFeedEntry> fetchLatestItems()
     {
