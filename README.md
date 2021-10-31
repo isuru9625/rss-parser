@@ -1,3 +1,8 @@
+**Run The Application**
+  clone the repository, https://github.com/isuru9625/rss-parser.git and run ResParserApplication.java. The default port is 8080.
+  And the documentation of this application is shown in below. 
+
+
 **RSS-PARSER**
 ----
   This is a Spring Boot application that polls a RSS feed every 5 minutes, and stores any items or updates or in an in-memory database, H2. This application exposes     end points to get the latest 10 items(In base scenario) of rss feed in the database.
@@ -48,10 +53,6 @@
   * **Code:** 404 Not Found <br />
     **Content:** `{ error : "Log in" }`
 
-  OR
-
-  * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `{ error : "Email Invalid" }`
 
 * **Sample Call:**
 
