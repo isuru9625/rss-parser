@@ -11,15 +11,8 @@
   `GET` 
   
 *  **URL Params**
+
 no parameters required
-
-   **Required:**
- 
-   `id=[integer]`
-
-   **Optional:**
- 
-   `photo_id=[alphanumeric]`
 
 * **Data Params**
 
