@@ -1,7 +1,7 @@
 **RSS-PARSER**
 ----
-  <_Additional information about your API call. Try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple)._>
-
+  This is a Spring Boot application that polls a RSS feed every 5 minutes, and stores any items or updates or in an in-memory database, H2. This application exposes     end points to get the latest 10 items of rss feed in the database.
+  
 * **URL**
 
   http://{host}:{port}/v1/rssFeed/items
